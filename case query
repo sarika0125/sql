@@ -1,0 +1,10 @@
+case query samples 
+
+
+SELECT Country, Customer_id
+CASE
+   WHEN AGE > 25 THEN 'BIGGER'
+   WHEN AGE < 22 THEN 'YOUNGER'
+   ELSE 'GREATER THAN'
+END AS NAME
+FROM CUSTOMERS;
